@@ -81,7 +81,7 @@
   .qa div { border-bottom: 1pt solid var(--paper-2); padding-bottom: 2mm; }
   .qa .q { font-weight: 700; }
   .qa .ans { color: var(--soft); }
-  .credits { columns: 3; column-gap: 5mm; font-size: 6.4pt; line-height: 1.25; }
+  .credits { columns: 3; column-gap: 5mm; font-size: 6.8pt; line-height: 1.3; height: 100mm; overflow: hidden; }
   .credits div { break-inside: avoid; margin-bottom: 1.5mm; }
   .map img { width: 100%; height: 118mm; object-fit: contain; border: 1.5pt solid var(--ink); }
   .toc { display: grid; gap: 2mm; font-size: 10pt; }
@@ -140,9 +140,13 @@
     <div class="qr" style="margin-top:8mm"><img src="booklet/qr/dinner.png" alt=""><p>The quiz on the phone, answers unlocked by the five stickers.</p></div></div></div>`);
   // credits
   fetch('art/credits.json').then(r => r.json()).then(j => {
-    const list = (j.saved || j).map(c => `<div><b>${esc(c.title || c.slug)}</b> — ${esc(c.artist || c.photographer_or_uploader_credit || '')}${c.date ? ', ' + esc(c.date) : ''}${c.collection ? '. ' + esc(c.collection) : ''}. ${esc(c.licence || '')}</div>`).join('');
-    page(`<p class="eyebrow">Credits</p><h2 style="font-size:14pt;margin:2mm 0 3mm">Pictures, sources, thanks</h2><div class="credits">${list}</div>
-      <p class="credit" style="margin-top:3mm">Text © Andrey Sadovykh, CC BY 4.0. Audio episodes generated with NotebookLM from fact-checked notes; the notes are the reference, not the recordings. Comic pages drawn with Gemini in paper-cut style from our script; no real person is depicted. Map data © OpenStreetMap contributors (ODbL), tiles by OpenFreeMap. Research sources are listed in the project's notes and in art/credits.json on the site.</p>`);
+    const all = (j.saved || j).map(c => `<div><b>${esc(c.title || c.slug)}</b> — ${esc(c.artist || c.photographer_or_uploader_credit || '')}${c.date ? ', ' + esc(c.date) : ''}${c.collection ? '. ' + esc(c.collection) : ''}. ${esc(c.licence || '')}</div>`);
+    const per = 24; const pages = Math.ceil(all.length / per);
+    for (let k = 0; k < pages; k++) {
+      const last = k === pages - 1;
+      page(`<p class="eyebrow">Credits · ${k + 1} of ${pages}</p>${k === 0 ? '<h2 style="font-size:14pt;margin:2mm 0 3mm">Pictures, sources, thanks</h2>' : '<div style="height:4mm"></div>'}<div class="credits">${all.slice(k * per, (k + 1) * per).join('')}</div>
+        ${last ? `<p class="credit" style="margin-top:4mm;max-width:170mm">Text © Andrey Sadovykh, CC BY 4.0. Audio episodes generated with NotebookLM from fact-checked notes; the notes are the reference, not the recordings. Comic pages drawn with Gemini in paper-cut style from our script; no real person is depicted. Map data © OpenStreetMap contributors (ODbL), tiles by OpenFreeMap. Research sources are listed in the project's notes and in art/credits.json on the site.</p>` : ''}`);
+    }
     document.body.dataset.ready = '1';
   });
 })();
