@@ -251,6 +251,10 @@
   $('menuBtn').addEventListener('click', () => { const m = $('menu'); m.hidden = !m.hidden; $('menuBtn').setAttribute('aria-expanded', String(!m.hidden)); });
   $('routeToggle').addEventListener('click', (e) => { e.preventDefault(); $('menu').hidden = true; toggleLong(); });
   $('locateLink').addEventListener('click', (e) => { e.preventDefault(); $('menu').hidden = true; geo.trigger(); });
+  $('allParis').addEventListener('click', (e) => { e.preventDefault(); $('menu').hidden = true; closeStation();
+    const b = new maplibregl.LngLatBounds(); (W.pois || []).forEach(c => b.extend(c.coord)); W.stations.forEach(s => b.extend(s.coord));
+    map.fitBounds(b, { padding: { top: 40, bottom: 40, left: 30, right: 30 }, duration: reduced ? 0 : 1200 });
+    toast('Stars: Matisse places · cups: the cafés. Tap one.'); });
   document.addEventListener('keydown', (e) => { if (!sheet.classList.contains('open')) return; if (e.key === 'ArrowRight') goPanel(panel + 1); if (e.key === 'ArrowLeft') goPanel(panel - 1); if (e.key === 'Escape') closeStation(); });
   window.addEventListener('resize', () => { if (cur >= 0) placeCamera(); });
 

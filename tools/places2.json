@@ -1,0 +1,412 @@
+[
+  {
+    "id": "musee-gustave-moreau",
+    "name": "Musée Gustave-Moreau",
+    "sub": "House and studio of Matisse's teacher, museum since 1903",
+    "address": "14 rue de La Rochefoucauld, 75009 Paris",
+    "coord": [
+      2.334416,
+      48.877912
+    ],
+    "text": "Gustave Moreau taught Matisse at the École des Beaux-Arts from 1895 until his death in 1898; Matisse called him his favourite master, and Rouault, Marquet, Manguin and Camoin were fellow pupils. Moreau left this house and its contents to the State; Rouault became the museum's first curator. The upper floors are his studio, walls covered with sketches. Open daily except Tuesday, 10–18.",
+    "source_urls": [
+      "https://www.universalis.fr/encyclopedie/gustave-moreau/4-le-maitre-des-fauves/",
+      "https://www.universalis.fr/encyclopedie/gustave-moreau/5-le-musee-gustave-moreau/",
+      "https://musee-moreau.fr/en",
+      "https://www.centrepompidou.fr/fileadmin/user_upload/matisse-pdf_interactif.pdf"
+    ],
+    "commons_file": "Paris musée Gustave-Moreau, 19 mai 2013.jpg",
+    "commons_licence": "CC BY-SA 3.0",
+    "image_credit_line": "Velvet, via Wikimedia Commons, CC BY-SA 3.0"
+  },
+  {
+    "id": "ecole-des-beaux-arts",
+    "name": "École des Beaux-Arts, Moreau's studio",
+    "sub": "Where Matisse trained under Gustave Moreau, 1892–98",
+    "address": "14 rue Bonaparte, 75006 Paris",
+    "coord": [
+      2.334499,
+      48.856491
+    ],
+    "text": "Matisse failed the entrance competition in January 1892 but drew in Gustave Moreau's studio as an unofficial pupil, was formally admitted in 1895, and stayed until Moreau died in 1898. Here he met Albert Marquet, Henri Manguin, Charles Camoin and Georges Rouault, the future Fauve circle, and was sent to the Louvre to copy. The school still occupies the rue Bonaparte site.",
+    "source_urls": [
+      "https://www.centrepompidou.fr/en/ressources/oeuvre/c6b5nk9",
+      "https://www.universalis.fr/encyclopedie/henri-matisse/3-une-esthetique-de-l-echange/",
+      "https://www.museothyssen.org/en/node/14744",
+      "https://www.britannica.com/biography/Henri-Matisse"
+    ],
+    "commons_file": "Ecole des Beaux-Arts, Paris - Main Entrance 2011.JPG",
+    "commons_licence": "CC BY-SA 3.0",
+    "image_credit_line": "DIMSFIKAS, via Wikimedia Commons, CC BY-SA 3.0"
+  },
+  {
+    "id": "ecole-des-arts-decoratifs",
+    "name": "Former École des Arts décoratifs (amphithéâtre Saint-Côme)",
+    "sub": "Evening drawing classes where Matisse met Marquet, 1892",
+    "address": "5 rue de l'École-de-Médecine, 75006 Paris",
+    "coord": [
+      2.341955,
+      48.850587
+    ],
+    "text": "In 1892 Matisse left the Académie Julian for evening classes at the École nationale des arts décoratifs, then housed in the old surgeons' amphitheatre of Saint-Côme. Here he met Albert Marquet, enrolled since 1890, who became a lifelong friend. Both appear on the school's alumni roll. The school moved to rue d'Ulm in 1928; the domed 1690s building survives.",
+    "source_urls": [
+      "https://www.britannica.com/biography/Henri-Matisse",
+      "https://fr.wikipedia.org/wiki/%C3%89cole_nationale_sup%C3%A9rieure_des_arts_d%C3%A9coratifs",
+      "https://pop.culture.gouv.fr/notice/memoire/APMH00083533",
+      "https://www.ensad.fr/en/histoire-0"
+    ],
+    "commons_file": "Ancien amphithéâtre de Saint Côme, école nationale des Arts Décoratifs, 5 rue de l'Ecole-de-Médecine, 6ème arrondissemen, PH13507.jpg",
+    "commons_licence": "CC0 1.0",
+    "image_credit_line": "Eugène Atget, Musée Carnavalet / Paris Musées, CC0, via Wikimedia Commons"
+  },
+  {
+    "id": "galerie-vollard",
+    "name": "Site of Ambroise Vollard's gallery",
+    "sub": "Cézanne's Three Bathers bought 1899; first solo show, June 1904",
+    "address": "6 rue Laffitte (site; today's 2–12 block at boulevard Haussmann), 75009 Paris",
+    "coord": [
+      2.337423,
+      48.872583
+    ],
+    "text": "Ambroise Vollard traded at 6 rue Laffitte from 1896 to 1924. In 1899 Matisse, hard up, bought Cézanne's Three Bathers here, and in June 1904 Vollard mounted his first solo exhibition, with a catalogue preface by Roger Marx; little sold. Vollard was evicted when boulevard Haussmann was cut through, and the low even numbers no longer exist; the block has been rebuilt.",
+    "source_urls": [
+      "https://www.metmuseum.org/research-centers/leonard-a-lauder-research-center/research-resources/modern-art-index-project/vollard",
+      "https://rouault.org/en/?p=3501",
+      "https://emuseum.delart.org/people/1623/henri-matisse",
+      "https://en.wikipedia.org/wiki/Three_Bathers",
+      "https://www.centrepompidou.fr/fileadmin/user_upload/matisse-pdf_interactif.pdf"
+    ],
+    "commons_file": "Paris 75009 Rue Laffitte no 02-12 x Boulevard Haussmann 20160101.jpg",
+    "commons_licence": "CC BY 2.0",
+    "image_credit_line": "Guilhem Vellut, via Wikimedia Commons, CC BY 2.0"
+  },
+  {
+    "id": "galerie-berthe-weill",
+    "name": "Galerie B. Weill",
+    "sub": "Matisse's first sale through a dealer, April 1902",
+    "address": "25 rue Victor-Massé, 75009 Paris",
+    "coord": [
+      2.338036,
+      48.880796
+    ],
+    "text": "Berthe Weill, a pioneering woman dealer, opened the Galerie B. Weill here on 1 December 1901 as 'a place for the young'. In April 1902 she sold a Matisse still life, his first sale through a dealer, and from 1902 showed the painters around him repeatedly before the Fauve scandal of 1905. A plaque on the building now honours her.",
+    "source_urls": [
+      "https://www.musee-orangerie.fr/en/node/309385",
+      "https://news.artnet.com/art-world/berthe-weill-grey-art-museum-2546372",
+      "https://unidivers.fr/paris-musee-orangerie-berthe-weill/",
+      "https://en.wikipedia.org/wiki/Berthe_Weill"
+    ],
+    "commons_file": "25 rue Victor-Massé, Paris 9e 3-5.jpg",
+    "commons_licence": "CC BY-SA 4.0",
+    "image_credit_line": "Polymagou, via Wikimedia Commons, CC BY-SA 4.0"
+  },
+  {
+    "id": "galerie-druet",
+    "name": "Site of the Galerie Druet",
+    "sub": "Matisse's second solo show, 19 March – 7 April 1906",
+    "address": "114 rue du Faubourg-Saint-Honoré, 75008 Paris",
+    "coord": [
+      2.314532,
+      48.871752
+    ],
+    "text": "Eugène Druet opened his gallery at this address in 1903 and moved to 20 rue Royale in 1908. Matisse's second one-man show ran here from 19 March to 7 April 1906, some sixty works opening the day before the Salon des Indépendants; Druet also bought a stock of recent paintings for 2,000 francs. The site is now part of the Hôtel Le Bristol, opened in 1925.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Eug%C3%A8ne_Druet",
+      "https://www.doaks.org/resources/bliss-tyler-correspondence/annotations/galerie-e-druet",
+      "https://erenow.org/common/in-montmartre-picasso-matisse-and-the-birth-of-modernist-art/22.php",
+      "https://en.wikipedia.org/wiki/H%C3%B4tel_Le_Bristol_Paris"
+    ],
+    "commons_file": "Entrée du 114 Faubourg rue du Faubourg-Saint-Honoré à Paris.JPG",
+    "commons_licence": "CC BY-SA 3.0",
+    "image_credit_line": "Erwmat, via Wikimedia Commons, CC BY-SA 3.0"
+  },
+  {
+    "id": "galerie-bernheim-jeune",
+    "name": "Galerie Bernheim-Jeune (1906–25 premises)",
+    "sub": "Matisse's first dealer contract, 18 September 1909",
+    "address": "25 boulevard de la Madeleine (corner rue du Chevalier-de-Saint-George, ex-rue Richepance), 75001 Paris",
+    "coord": [
+      2.325463,
+      48.869311
+    ],
+    "text": "Josse and Gaston Bernheim opened here in 1906, with the critic Félix Fénéon hired to recruit younger artists. On 18 September 1909 Matisse signed his first dealer contract, 25 per cent of sale prices, renewed for years; the gallery gave him a show in 1910. Bernheim-Jeune moved to 83 rue du Faubourg-Saint-Honoré in 1925. The corner building was photographed in 1910.",
+    "source_urls": [
+      "https://research.frick.org/directory/detail/71",
+      "https://transatlanticencounters.rrchnm.org/items/show/5161",
+      "https://galerie-institut.com/en/?p=17795",
+      "https://www.metmuseum.org/research-centers/leonard-a-lauder-research-center/research-resources/modern-art-index-project/bernheim-jeune"
+    ],
+    "commons_file": "Bernheim Jeune, Paris, 1910.jpg",
+    "commons_licence": "Public domain",
+    "image_credit_line": "Anonymous photograph, 1910, Galerie Bernheim-Jeune, public domain, via Wikimedia Commons"
+  },
+  {
+    "id": "serres-cours-la-reine",
+    "name": "Site of the Serres de la Ville (Salon des Indépendants)",
+    "sub": "Le Bonheur de vivre shown, March 1906",
+    "address": "Cours-la-Reine, 75008 Paris",
+    "coord": [
+      2.313389,
+      48.865378
+    ],
+    "text": "The jury-free Salon des Indépendants was held in the municipal greenhouses along Cours-la-Reine in the 1900s. Here in March 1906 Matisse exhibited a single huge canvas, Le Bonheur de vivre, whose cadmium colours and distorted figures provoked outrage; Leo Stein bought it. The greenhouses are gone, and the painting is at the Barnes Foundation, Philadelphia.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Le_bonheur_de_vivre",
+      "https://www.musee-orsay.fr/fr/oeuvres/eve-bretonne-7989",
+      "https://reidhall.globalcenters.columbia.edu/content/salons-1894-1914",
+      "https://en.wikipedia.org/wiki/Salon_des_ind%C3%A9pendants"
+    ],
+    "commons_file": "Bonheur Matisse.jpg",
+    "commons_licence": "Public domain",
+    "image_credit_line": "Henri Matisse, Le Bonheur de vivre, 1905–06, Barnes Foundation, public domain, via Wikimedia Commons"
+  },
+  {
+    "id": "petit-palais",
+    "name": "Petit Palais",
+    "sub": "Cézanne's Three Bathers, Matisse's gift of 1936",
+    "address": "Avenue Winston-Churchill, 75008 Paris",
+    "coord": [
+      2.314429,
+      48.8659
+    ],
+    "text": "Cézanne's Three Bathers (1879–82), bought from Vollard in 1899 at great sacrifice, hung in Matisse's home for 37 years. In November 1936 he gave it to the City of Paris, telling curator Raymond Escholier it had sustained him morally at critical moments. The first bathers composition to enter a Western European museum, it is on view in the free permanent collection.",
+    "source_urls": [
+      "https://www.petitpalais.paris.fr/en/node/508",
+      "https://en.wikipedia.org/wiki/Three_Bathers",
+      "https://www.timeout.fr/paris/musee/petit-palais/cezanne/trois-baigneuses",
+      "https://www.centrepompidou.fr/fileadmin/user_upload/matisse-pdf_interactif.pdf"
+    ],
+    "commons_file": "Trois baigneuses, par Paul Cézanne, Musée du Petit Palais.jpg",
+    "commons_licence": "Public domain",
+    "image_credit_line": "Paul Cézanne, Trois baigneuses, Petit Palais / Paris Musées, public domain, via Wikimedia Commons"
+  },
+  {
+    "id": "musee-de-l-orangerie",
+    "name": "Musée de l'Orangerie",
+    "sub": "Ten Matisses in the Walter-Guillaume collection",
+    "address": "Jardin des Tuileries, place de la Concorde, 75001 Paris",
+    "coord": [
+      2.322354,
+      48.863549
+    ],
+    "text": "The Walter-Guillaume collection, assembled by dealer Paul Guillaume and his widow Domenica, includes ten paintings by Matisse, mostly Nice-period interiors and odalisques such as Odalisque à la culotte grise and Odalisque bleue ou l'Esclave blanche. They hang in the lower galleries beneath Monet's Water Lilies, alongside Derain, Picasso and Soutine.",
+    "source_urls": [
+      "https://www.musee-orangerie.fr/en/node/197501",
+      "https://www.musee-orangerie.fr/es/obras/odalisque-la-culotte-grise-196476",
+      "https://www.musee-orangerie.fr/es/obras/odalisque-bleue-ou-lesclave-blanche-196468"
+    ],
+    "commons_file": "Orangerie Tuileries.jpg",
+    "commons_licence": "CC0 1.0",
+    "image_credit_line": "Jebulon, CC0, via Wikimedia Commons"
+  },
+  {
+    "id": "centre-pompidou",
+    "name": "Centre Pompidou (closed for works until 2030)",
+    "sub": "The French State's Matisse collection",
+    "address": "Place Georges-Pompidou, 75004 Paris",
+    "coord": [
+      2.351132,
+      48.860307
+    ],
+    "text": "The Musée national d'art moderne holds the State's Matisse collection, from Luxe, calme et volupté (1904) to the twenty cut-paper maquettes for Jazz and La Tristesse du roi (1952). The building closed on 22 September 2025 for a five-year renovation; works are shown meanwhile at the Grand Palais, Centre Pompidou-Metz and abroad, so check before visiting.",
+    "source_urls": [
+      "https://www.centrepompidou.fr/fileadmin/user_upload/matisse-pdf_interactif.pdf",
+      "https://www.centrepompidou.fr/en/ressources/oeuvre/coE6ARM",
+      "https://www.thelocal.fr/20250309/art-lovers-mob-pariss-pompidou-centre-ahead-of-five-year-closure",
+      "https://leclaireur.fnac.com/article/578941-centre-pompidou-ou-vont-aller-les-oeuvres-durant-les-travaux/"
+    ],
+    "commons_file": "Centre Pompidou, seen from Tour Montparnasse.jpg",
+    "commons_licence": "CC0 1.0",
+    "image_credit_line": "Alfvanbeem, CC0, via Wikimedia Commons"
+  },
+  {
+    "id": "musee-d-art-moderne-de-paris",
+    "name": "Musée d'Art Moderne de Paris",
+    "sub": "La Danse inachevée and La Danse de Paris, 1931–33",
+    "address": "11 avenue du Président-Wilson, 75116 Paris",
+    "coord": [
+      2.297874,
+      48.863807
+    ],
+    "text": "In 1930 Albert Barnes commissioned a mural for his foundation near Philadelphia; Matisse chose the dance and painted three versions. The first, La Danse inachevée, judged too decorative, was found in his Nice studio in 1990; the second, La Danse de Paris (1931–33), planned with cut paper, did not fit Barnes's arches. Both fill the Salle Matisse; the permanent collection is free.",
+    "source_urls": [
+      "https://www.mam.paris.fr/en/node/516",
+      "https://mam.paris.fr/sites/default/files/documents/depliant_mam-16pages-fr-16juin.pdf"
+    ],
+    "commons_file": "Henri matisse, la danse di parigi, 1931-33, 00.jpg",
+    "commons_licence": "CC BY-SA 4.0",
+    "image_credit_line": "Photo Francesco Bini (Sailko), via Wikimedia Commons, CC BY-SA 4.0; Henri Matisse, La Danse de Paris, 1931–33, public domain"
+  },
+  {
+    "id": "musee-picasso",
+    "name": "Musée national Picasso-Paris (Hôtel Salé)",
+    "sub": "Matisse's Marguerite (1907), from Picasso's own collection",
+    "address": "5 rue de Thorigny, 75003 Paris",
+    "coord": [
+      2.362517,
+      48.859604
+    ],
+    "text": "Picasso kept Matisses all his life; they entered the State collection with his 1978 donation. Among them is Marguerite, painted in Collioure in 1906–07, the portrait of Matisse's daughter that Picasso chose when the two exchanged paintings in 1907, giving Pitcher, Bowl and Lemon in return. Gertrude Stein recorded the swap. It hangs in the Hôtel Salé's permanent display.",
+    "source_urls": [
+      "https://mam.paris.fr/sites/default/files/documents/en_cp_matisse_et_marguerite_mam.pdf",
+      "https://news.artnet.com/art-world/matisse-daughter-2640043",
+      "https://theartnewspaper.com/2017/08/01/marguerite-matisse-plays-starring-role-in-picassos-studio-and-ra-show"
+    ],
+    "commons_file": "Henri Matisse, 1906-07, Portrait de Marguerite, oil on canvas, 65 x 54 cm, Musée Picasso, Paris.jpg",
+    "commons_licence": "Public domain",
+    "image_credit_line": "Henri Matisse, Marguerite, 1906–07, Musée national Picasso-Paris, public domain, via Wikimedia Commons"
+  },
+  {
+    "id": "galerie-georges-petit",
+    "name": "Site of the Galerie Georges Petit",
+    "sub": "Matisse retrospective, 16 June – 25 July 1931",
+    "address": "8 rue de Sèze, 75009 Paris",
+    "coord": [
+      2.327186,
+      48.870278
+    ],
+    "text": "The Galerie Georges Petit, at 8 rue de Sèze from 1890, staged Matisse's great retrospective from 16 June to 25 July 1931. The show travelled to the Kunsthalle Basel and to New York, where it became MoMA's first monographic Matisse exhibition that November. The gallery closed in 1933; the building survives.",
+    "source_urls": [
+      "https://www.metmuseum.org/research-centers/leonard-a-lauder-research-center/research-resources/modern-art-index-project/galerie-georges-petit",
+      "https://www.moma.org/calendar/exhibitions/1903",
+      "https://www.transatlanticencounters.rrchnm.org/items/show/5179"
+    ],
+    "commons_file": "12-12-31, visite de M. Doumer à l'exposition des travaux des blessés de l'Atelier Lachenal (galerie Georges-Petit, 8 rue de Sèze, 8e arrondissement) - btv1b532515747.jpg",
+    "commons_licence": "Public domain",
+    "image_credit_line": "Agence Rol, 1931, Bibliothèque nationale de France, public domain, via Wikimedia Commons"
+  },
+  {
+    "id": "palais-garnier",
+    "name": "Palais Garnier (Opéra de Paris)",
+    "sub": "Le Chant du Rossignol, Matisse's first stage designs, 2 February 1920",
+    "address": "Place de l'Opéra, 75009 Paris",
+    "coord": [
+      2.332135,
+      48.871044
+    ],
+    "text": "Matisse's first work for the theatre: sets and costumes for Diaghilev's Ballets Russes in Le Chant du Rossignol, music by Stravinsky, choreography by Massine, premiered here on 2 February 1920. He drew on Ming court dress and Chinese ceramics and first used cut coloured paper to plan the designs. The Bibliothèque-musée de l'Opéra, inside the building, keeps his costume maquettes.",
+    "source_urls": [
+      "https://collections.vam.ac.uk/item/O1115582/theatre-costume-henri-matisse",
+      "https://digital.nga.gov.au/archive/exhibition/balletsrusses/default.cfm%3fmnuid=3&galid=19.html",
+      "https://www.wienersymphoniker.at/en/opus/le-chant-du-rossignol-song-nightingale-symphonic-poem-3-parts"
+    ],
+    "commons_file": "Le chant du rossignol - maquette d'Henri Matisse pour un costume de guerrier - btv1b7002916g.jpg",
+    "commons_licence": "Public domain",
+    "image_credit_line": "Henri Matisse, costume maquette for Le Chant du Rossignol, Bibliothèque nationale de France, public domain, via Wikimedia Commons"
+  },
+  {
+    "id": "galerie-paul-rosenberg",
+    "name": "Galerie Paul Rosenberg",
+    "sub": "Matisse's dealer from 1936; show of recent works, May 1936",
+    "address": "21 rue La Boétie, 75008 Paris",
+    "coord": [
+      2.316857,
+      48.873983
+    ],
+    "text": "Paul Rosenberg's gallery and home from 1910. He became Matisse's dealer in 1936 and showed his recent work here from 2 to 30 May 1936; 119 photographs of Matisses survive in the gallery's glass-plate archive at the Centre Pompidou. In July 1940 the building was seized and used for antisemitic propaganda until 1944. A plaque now commemorates Rosenberg.",
+    "source_urls": [
+      "https://www.centrepompidou.fr/en/ressources/archive/A327aG3",
+      "https://en.wikipedia.org/wiki/Paul_Rosenberg_(art_dealer)",
+      "https://viaf.org/viaf/8493826/"
+    ],
+    "commons_file": "Plaque Paul Rosenberg, 21 rue La Boétie, Paris 8e 1.jpg",
+    "commons_licence": "CC BY 4.0",
+    "image_credit_line": "Polymagou, via Wikimedia Commons, CC BY 4.0"
+  },
+  {
+    "id": "galerie-maeght",
+    "name": "Galerie Maeght (original premises)",
+    "sub": "Opened with a Matisse exhibition, late 1945",
+    "address": "13 rue de Téhéran, 75008 Paris",
+    "coord": [
+      2.312627,
+      48.87684
+    ],
+    "text": "Aimé Maeght closed his Cannes gallery in late 1945 and opened the Galerie Maeght in this townhouse with a solo exhibition of Matisse, launching the Paris dealership that later created the Fondation Maeght. Matisse, already tied to other dealers, never signed exclusively with him. The gallery later left rue de Téhéran; the building remains.",
+    "source_urls": [
+      "https://www.metmuseum.org/en/research-centers/leonard-a-lauder-research-center/research-resources/modern-art-index-project/maeght"
+    ],
+    "commons_file": "13 rue de Téhéran Paris.jpg",
+    "commons_licence": "CC BY 4.0",
+    "image_credit_line": "CVB, via Wikimedia Commons, CC BY 4.0"
+  },
+  {
+    "id": "editions-verve-teriade",
+    "name": "Éditions Verve (Tériade)",
+    "sub": "Publisher of Jazz, 1947",
+    "address": "4 rue Férou, 75006 Paris",
+    "coord": [
+      2.33397,
+      48.849672
+    ],
+    "text": "Tériade published his review Verve from 4 rue Férou, founded in 1937. He first proposed a colour book to Matisse in 1941; the artist cut the gouache plates of Jazz mostly in 1943–44, wrote its text in 1946, and the album appeared in September 1947 in 250 copies, the manifesto of the cut-outs. Verve 21–22 (1948) was devoted entirely to his Vence work.",
+    "source_urls": [
+      "https://www.centrepompidou.fr/en/ressources/oeuvre/coE6ARM",
+      "https://sotherans.co.uk/products/teriade-pseudonym-for-stratis-eleftheriades-editor-verve-issues-1-4-i-december-1937-ii-spring-1938-march-june-iii-october-december-1938-iv-january-march-1939",
+      "https://annexgalleries.com/inventory/detail/24096/Multiple-Artists/Verve-No-3---An-Artistic-and-Literary-Quarterly"
+    ],
+    "commons_file": "4 rue Férou Paris.jpg",
+    "commons_licence": "CC BY-SA 4.0",
+    "image_credit_line": "CVB, via Wikimedia Commons, CC BY-SA 4.0"
+  },
+  {
+    "id": "musee-du-louvre",
+    "name": "Musée du Louvre",
+    "sub": "Where the student Matisse copied Chardin, Raphael and Poussin",
+    "address": "99 rue de Rivoli, 75001 Paris",
+    "coord": [
+      2.334832,
+      48.862725
+    ],
+    "text": "As Moreau's pupil Matisse copied old masters here for money and training: Chardin's The Pipe, The Ray and The Buffet, then Raphael, Poussin and Ruysdael. His copy of Chardin's La Pourvoyeuse, made between 1896 and 1903, was acquired by the Musée Matisse at Le Cateau-Cambrésis; the originals still hang in the Louvre's French painting rooms.",
+    "source_urls": [
+      "https://www.culture.gouv.fr/regions/drac-hauts-de-france/actualites/Le-Musee-Matisse-accueille-une-exposition-reconnue-d-interet-national",
+      "https://ashadedviewonfashion.com/2019/06/08/la-pourvoyeuse-by-jean-baptiste-simeon-chardin-copied-by-matisse-at-the-louvre-in-the-atelier-of-gustave-moreau/",
+      "https://www.moma.org/documents/moma_catalogue_1903_300086892.pdf"
+    ],
+    "commons_file": "Louvre Museum Wikimedia Commons.jpg",
+    "commons_licence": "CC BY-SA 3.0",
+    "image_credit_line": "Benh LIEU SONG, via Wikimedia Commons, CC BY-SA 3.0"
+  },
+  {
+    "id": "pere-lachaise-gertrude-stein",
+    "name": "Grave of Gertrude Stein, Père-Lachaise",
+    "sub": "Matisse's first great patron, buried in division 94",
+    "address": "Cimetière du Père-Lachaise, division 94 (Gambetta entrance, rue des Rondeaux), 75020 Paris",
+    "coord": [
+      2.397629,
+      48.863151
+    ],
+    "text": "Gertrude Stein (1874–1946), who with her brother Leo bought Matisse's Woman with a Hat from the 1905 Salon d'Automne and received him at 27 rue de Fleurus, is buried in division 94, near the Gambetta entrance. Alice B. Toklas (died 1967) lies with her; her name is engraved on the back of the stone.",
+    "source_urls": [
+      "https://www.findagrave.com/memorial/977",
+      "https://en.wikipedia.org/wiki/Alice_B._Toklas",
+      "https://en.wikipedia.org/wiki/Woman_with_a_Hat"
+    ],
+    "commons_file": "Gertrude Stein tombe.jpg",
+    "commons_licence": "CC0 1.0",
+    "image_credit_line": "ManoSolo13241324, CC0, via Wikimedia Commons"
+  },
+  {
+    "id": "issy-les-moulineaux-matisse-house",
+    "name": "Matisse's house and garden studio, Issy-les-Moulineaux",
+    "sub": "Home and studio 1909–17: The Red Studio, The Piano Lesson",
+    "address": "92 avenue du Général-de-Gaulle (formerly route de Clamart), 92130 Issy-les-Moulineaux — current number per Geneawiki, unverified",
+    "coord": [
+      2.27751,
+      48.818549
+    ],
+    "text": "In 1909 Matisse rented a villa with a garden on the route de Clamart and had a prefabricated studio built beside it, finished in October 1909. Here he painted The Red Studio (1911), The Piano Lesson and The Moroccans (1916), and ran his academy until 1911. His 1917 letterhead reads 92 route de Clamart; the house reportedly survives, and the family's Archives Henri Matisse are based in Issy.",
+    "source_urls": [
+      "https://www.themorgan.org/literary-historical/132391",
+      "https://press.moma.org/wp-content/uploads/2022/04/5-Matisse_ExtendedArtworkLabels.pdf",
+      "https://www.moma.org/collection/works/78389",
+      "https://www.moma.org/collection/works/78908",
+      "https://agorha.inha.fr/ark:/54721/4bdb06b7-5a00-4017-bc08-745c9c87a1bc",
+      "https://fr.geneawiki.com/wiki/Henri_MATISSE"
+    ],
+    "commons_file": "Jardin de l'artiste à Issy-les-Moulineaux(024909).jpg",
+    "commons_licence": "Public domain",
+    "image_credit_line": "Henri Matisse, Jardin de l'artiste à Issy-les-Moulineaux, public domain, via Wikimedia Commons"
+  }
+]
