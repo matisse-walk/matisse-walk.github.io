@@ -79,15 +79,42 @@
     toast(longShown ? 'Long walk: 4.4 km, via the Steins' : 'Short walk: 3.3 km');
   }
 
+  /* stickers sit on the ribbon: each station is snapped to the nearest point of the route line
+     (the address is a doorway or an alley; the route runs down the middle of the street) */
+  function nearestOnLine(pt, coords) {
+    const kx = Math.cos(pt[1] * Math.PI / 180); let best = pt, bd = Infinity;
+    for (let i = 0; i < coords.length - 1; i++) {
+      const a = coords[i], b = coords[i + 1];
+      const ax = (a[0] - pt[0]) * kx, ay = a[1] - pt[1], bx = (b[0] - pt[0]) * kx, by = b[1] - pt[1];
+      const dx = bx - ax, dy = by - ay, len2 = dx * dx + dy * dy;
+      let t = len2 ? -(ax * dx + ay * dy) / len2 : 0; t = Math.max(0, Math.min(1, t));
+      const px = ax + t * dx, py = ay + t * dy, d = px * px + py * py;
+      if (d < bd) { bd = d; best = [a[0] + t * (b[0] - a[0]), a[1] + t * (b[1] - a[1])]; }
+    }
+    return { point: best, metres: Math.sqrt(bd) * 111320 };
+  }
+
   const markers = {};
-  function addStickers() {
+  async function addStickers() {
+    let lines = [];
+    try {
+      const [s, l] = await Promise.all([fetch('map/route-short.geojson').then(r => r.json()), fetch('map/route-long.geojson').then(r => r.json())]);
+      lines = [s.features[0].geometry.coordinates, l.features[0].geometry.coordinates];
+    } catch (e) { /* no snapping without the lines */ }
     W.stations.forEach((s, i) => {
+      let at = s.coord;
+      if (lines.length) {
+        const a = nearestOnLine(s.coord, lines[0]), b = nearestOnLine(s.coord, lines[1]);
+        const pick = a.metres <= 80 ? a : (b.metres <= 80 ? b : null);
+        if (pick) at = pick.point;
+      }
+      s.mapCoord = at;
       const b = document.createElement('button');
       b.className = 'sticker' + (s.bonus ? ' bonus' : ''); b.dataset.id = s.id; b.dataset.idx = i;
       b.setAttribute('aria-label', `Stop ${s.n}: ${s.title}`);
       b.innerHTML = `<svg><use href="#st-${s.sticker}"/></svg><span class="n">${s.n === 0 ? 'H' : s.n}</span>`;
       b.addEventListener('click', (e) => { e.stopPropagation(); openStation(i); });
-      markers[s.id] = new maplibregl.Marker({ element: b, anchor: 'center' }).setLngLat(s.coord).addTo(map);
+      markers[s.id] = new maplibregl.Marker({ element: b, anchor: 'center' }).setLngLat(at).addTo(map);
     });
     renderAlbum();
   }
