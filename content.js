@@ -145,7 +145,10 @@ window.WALK = {
         "1961, New York. MoMA hangs his cut-out The Boat upside down for 47 days. Nobody notices."
       ],
       then: { src: "art/matisse-oceanie-le-ciel-1946.jpg", credit: "Henri Matisse, Océanie, le ciel, 1946, printed on linen 1948. Public domain in the EU." },
-      more: [],
+      more: [
+        {"src": "art/matisse-nu-bleu-iv-1952.jpg", "credit": "Henri Matisse, Nu bleu IV, 1952, cut and pasted paper. Musée Matisse, Nice. Public domain in the EU. Photo Yair-haklai, CC BY-SA 4.0."},
+        {"src": "art/matisse-composition-1947.jpg", "credit": "Henri Matisse, Composition in yellow, blue and black, 1947, cut paper. Public domain in the EU. Photo Francesco Bini, CC BY-SA 4.0."}
+      ],
       stand: "Stand opposite the doorway of number 132. A plain residential building, no plaque.",
       story: "Matisse kept a flat here. In the summer of 1946 there was a stain on the wall; he pinned a paper swallow over it, then another shape, and another, until the wall was Tahiti. The cut-outs, the works he is most loved for, began as home repair.",
       fact: "In 1961 MoMA hung his cut-out The Boat upside down for 47 days. About 116,000 visitors walked past. The guard: \"You don't know what's up and you don't know what's down and neither do we.\"",
