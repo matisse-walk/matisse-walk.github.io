@@ -88,13 +88,22 @@ details.quiz p { margin-top: 8px; }
 /* the strip: image + six captions laid over the panels (2 columns × 3 rows) */
 .strip { position: relative; margin: 0; border: 3px solid #141414; background: #FAF6EE; }
 .strip img { width: 100%; }
-.cap { position: absolute; width: 44.5%; background: rgba(250,246,238,.95); color: #141414; border: 2px solid #141414; padding: 3px 6px 4px; font-family: var(--hand); font-size: .86rem; line-height: 1.2; }
+.cap { color: #141414; font-family: var(--hand); line-height: 1.2; }
 .cap b { font-family: var(--display); font-weight: 900; margin-right: 5px; }
 .cap q { font-style: italic; }
 .cap q::before, .cap q::after { content: '"'; }
-.cap.l { left: 3.2%; } .cap.r { left: 52.3%; }
-.cap.t1 { top: 2%; } .cap.t2 { top: 35%; } .cap.t3 { top: 68%; }
-@media (min-width: 600px) { .cap { font-size: 1.05rem; } }
+/* phones: the drawing stays clear; captions sit under it in the same 2 × 3 order as the panels */
+@media (max-width: 599px) {
+  .strip { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 8px; padding: 0 6px 8px; }
+  .strip img { grid-column: 1 / -1; margin: 0 -6px; width: calc(100% + 12px); max-width: none; }
+  .cap { font-size: .95rem; }
+}
+/* wider screens: captions over the panels, translucent so the panel shows through */
+@media (min-width: 600px) {
+  .cap { position: absolute; width: 44.5%; background: rgba(250,246,238,.82); border: 2px solid #141414; padding: 3px 6px 4px; font-size: 1.05rem; backdrop-filter: blur(2px); }
+  .cap.l { left: 3.2%; } .cap.r { left: 52.3%; }
+  .cap.t1 { top: 2%; } .cap.t2 { top: 35%; } .cap.t3 { top: 68%; }
+}
 
 nav.next { display: flex; gap: 12px; justify-content: space-between; flex-wrap: wrap; }
 footer { max-width: 720px; margin: 0 auto; padding-inline: var(--gutter-l) var(--gutter-r); padding-block: 24px; font-size: .82rem; color: var(--ink-soft); }
