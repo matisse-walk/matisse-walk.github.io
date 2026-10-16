@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The route</title>
+<meta name="description" content="The map of Matisse's Montparnasse: a 3.3 km loop from the Drawing House through five stops.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&family=Karla:wght@400;700&family=Patrick+Hand&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>:root { --accent: #E63312; } .stops { display: grid; gap: 10px; padding: 0; margin: 0; list-style: none; } .stops li { display: grid; grid-template-columns: 44px 1fr; gap: 10px; align-items: start; } .stops .n { font-family: var(--display); font-weight: 900; font-size: 1.5rem; line-height: 1; color: #FAF6EE; background: var(--cobalt); width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; } .stops .n.h { background: var(--lemon); color: #141414; } .stops a { font-weight: 700; text-decoration: none; } .stops small { display: block; color: var(--ink-soft); font-size: .9rem; } .mapfig { margin: 0; border: 3px solid #141414; background: #FAF6EE; }</style>
+</head>
+<body>
+<header class="band">
+  <div class="in">
+    <div class="eyebrow" style="color:inherit;opacity:.85">The route</div>
+    <h1>A loop from the hotel</h1>
+    <p class="meta">3.3 km · leave 17:45, back about 19:12 · five stops · dinner at 20:00</p>
+  </div>
+</header>
+
+<main class="wrap page">
+  <figure class="mapfig">
+    <img src="map/route-short.png" srcset="map/route-short.png 1200w, map/route-short@2x.png 2400w" sizes="(max-width: 720px) 100vw, 720px" alt="Map of the short walk: five numbered stops on a loop from the hotel through Montparnasse">
+  </figure>
+  <p class="credit">Drawn from OpenStreetMap data (© OpenStreetMap contributors) and our measured route; every pin sits on its address.</p>
+  <div class="buttons">
+    <a class="btn" href="https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=48.837350,2.319941&destination=48.837350,2.319941&waypoints=48.838245,2.321818%7C48.843459,2.320739%7C48.844166,2.324140%7C48.842150,2.329050%7C48.841013,2.331957%7C48.840160,2.323860">Open in Google Maps</a>
+  </div>
+
+  <h2>Stops</h2>
+  <ol class="stops">
+    <li><span class="n h">H</span><div><a href="index.html">Drawing House</a><small>21 rue Vercingétorix · leave 17:45</small></div></li>
+    <li><span class="n">1</span><div><a href="stop-1.html">Gauguin's street</a><small>6 rue Vercingétorix · 17:50 · 198 m from the hotel</small></div></li>
+    <li><span class="n">2</span><div><a href="stop-2.html">The artists' canteen</a><small>21 avenue du Maine · 18:07 · 712 m</small></div></li>
+    <li><span class="n">3</span><div><a href="stop-3.html">The old station and the Americans</a><small>Place du 18-Juin-1940 · 18:20 · 416 m</small></div></li>
+    <li><span class="n">4</span><div><a href="stop-4.html">Carrefour Vavin</a><small>Balzac, Le Dôme, La Rotonde, La Coupole · 18:33 · 501 m</small></div></li>
+    <li><span class="n">5</span><div><a href="stop-5.html">Matisse's front door</a><small>132 boulevard du Montparnasse · 18:45 · 258 m</small></div></li>
+    <li><span class="n h">H</span><div><a href="index.html">Back to the hotel</a><small>via rue de la Gaîté · 1.2 km · about 19:12</small></div></li>
+  </ol>
+
+  <h2>The long version</h2>
+  <p>With a fast group and a dry evening, the loop can take in the Steins' two doors between stops 3 and 4: 4.4 km, back about 19:41.</p>
+  <figure class="mapfig">
+    <img src="map/route-long.png" srcset="map/route-long.png 1200w, map/route-long@2x.png 2400w" sizes="(max-width: 720px) 100vw, 720px" alt="Map of the long walk, with 27 rue de Fleurus and 58 rue Madame added" loading="lazy">
+  </figure>
+  <div class="buttons">
+    <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=48.837350,2.319941&destination=48.837350,2.319941&waypoints=48.838245,2.321818%7C48.843459,2.320739%7C48.844166,2.324140%7C48.846924,2.329331%7C48.847491,2.331511%7C48.842150,2.329050%7C48.841013,2.331957%7C48.840160,2.323860">Long route in Google Maps</a>
+  </div>
+
+  <nav class="next">
+    <a class="btn alt" href="index.html">Start</a>
+    <a class="btn" href="stop-1.html">Stop 1 →</a>
+  </nav>
+</main>
+<footer>A walk for the MATISSE project, prepared by Andrey Sadovykh. Map data © OpenStreetMap contributors.</footer>
+</body>
+</html>

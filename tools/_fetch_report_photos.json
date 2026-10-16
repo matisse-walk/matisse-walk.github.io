@@ -1,0 +1,53 @@
+{
+  "matisse-photo-1898": {
+    "file": "Henri Matisse Portraitf 1898.jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Henri_Matisse_Portraitf_1898.jpg",
+    "original_px": [
+      204,
+      286
+    ],
+    "licence_short": "Public domain",
+    "licence_url": null,
+    "licence_templates": [
+      "PD-old"
+    ],
+    "artist": "Unknown authorUnknown author",
+    "credit": "‪Hilary Spurling‬: ‪The Unknown Matisse: A Life of Henri Matisse : The Early Years, 1869-1908‬, ‪University of California Press, 2001‬, ISBN ‪978‬-‪0‬-‪52022203‬-‪8‬, S. 130",
+    "date": "1898",
+    "object_name": "Henri Matisse Portraitf 1898",
+    "description": "Henri Matisse Portraitfoto 1898, zur Zeit seiner Hochzeit mit Amélie Parayre",
+    "permission": null,
+    "wikitext_head": "== {{int:filedesc}} ==\n{{Information\n|Description    ={{de|1=[[Henri Matisse]] Portraitfoto 1898, zur Zeit seiner Hochzeit mit Amélie Parayre\n}}\n|Source         =‪Hilary Spurling‬: ‪The Unknown Matisse: A Life of Henri Matisse : The Early Years, 1869-1908‬, ‪University of California Press, 2001‬, ISBN ‪978‬-‪0‬-‪52022203‬-‪8‬, S. 130 \n|Author         ={{unknown|author}}\n|Date           =1898\n|Permission     =\n|other_versions =\n}}\n\n== {{int:license-header}} ==\n{{PD-old}}\n\n[[Category:Portrait painters]]\n[[Category:Photographs of Henri Matisse]]",
+    "saved_px": [
+      204,
+      286
+    ],
+    "fetched_from": "https://commons.wikimedia.org/wiki/Special:FilePath/Henri_Matisse_Portraitf_1898.jpg?width=1600"
+  },
+  "matisse-photo-1918-cagnes": {
+    "file": "Pierre-Auguste Renoir, Albert Marquet, Walther Halvorsen, Henri Matisse and Catherine Hessling (1918).jpg",
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir,_Albert_Marquet,_Walther_Halvorsen,_Henri_Matisse_and_Catherine_Hessling_(1918).jpg",
+    "original_px": [
+      490,
+      515
+    ],
+    "licence_short": "Public domain",
+    "licence_url": null,
+    "licence_templates": [
+      "PD-old",
+      "PD-old-100-expired"
+    ],
+    "artist": "photographe inidentifiable.",
+    "credit": "Musée Renoir - Cagnes-sur-Mer",
+    "date": "1918",
+    "object_name": "Pierre-Auguste Renoir, Albert Marquet, Walther Halvorsen, Henri Matisse and Catherine Hessling (1918)",
+    "description": "Pierre-Auguste Renoir (sitting), Albert Marquet, Walther Halvorsen, Henri Matisse and Catherine Hessling (from left to right) in Cagnes-sur-mer",
+    "permission": null,
+    "wikitext_head": "== {{int:filedesc}} ==\n{{Information\n|description=Pierre-Auguste Renoir (sitting), Albert Marquet, Walther Halvorsen, Henri Matisse and Catherine Hessling (from left to right) in Cagnes-sur-mer\n|date=1918\n|source= Musée Renoir - Cagnes-sur-Mer\n|author=photographe inidentifiable.\n|permission=\n|other_versions=\n|other_fields=\n}}\n\n=={{int:license-header}}==\n{{PD-old}}\n\n\n[[Category:Photographs of Pierre-Auguste Renoir]]\n[[Category:Photographs of Henri Matisse]]\n[[Category:Albert Marquet]]\n[[Category:Catherine Hessling]]\n\n== {{int:license-header}} ==\n{{PD-old-100-expired}}",
+    "saved_px": [
+      490,
+      515
+    ],
+    "fetched_from": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre-Auguste_Renoir,_Albert_Marquet,_Walther_Halvorsen,_Henri_Matisse_and_Catherine_Hessling_(1918).jpg?width=1600"
+  }
+}
