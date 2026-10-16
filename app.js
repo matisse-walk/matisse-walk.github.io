@@ -132,6 +132,7 @@
     if (best && bd < 400) toast(`${Math.round(bd)} m to ${best.title}`);
   });
   geo.on('error', () => toast('Location not available; tap a sticker instead'));
+  geo.on('trackuserlocationstart', () => toast('Following your position'));
 
   /* ---------- station sheet ---------- */
   let cur = -1, panel = 0, flipped = false;
@@ -224,7 +225,7 @@
   $('prevS').addEventListener('click', () => openStation(cur - 1, true));
   $('nextS').addEventListener('click', () => openStation(cur + 1, true));
   $('closeBtn').addEventListener('click', closeStation);
-  $('startBtn').addEventListener('click', hideCover);
+  $('startBtn').addEventListener('click', () => { hideCover(); setTimeout(() => { try { geo.trigger(); } catch (e) {} }, 600); });
   document.querySelectorAll('[data-open]').forEach(a => a.addEventListener('click', (e) => { e.preventDefault(); $('menu').hidden = true; openStation(+a.dataset.open); }));
   $('brand').addEventListener('click', (e) => { e.preventDefault(); closeStation(); map.flyTo({ center: [2.3265, 48.8415], zoom: 14.6 }); });
   $('menuBtn').addEventListener('click', () => { const m = $('menu'); m.hidden = !m.hidden; $('menuBtn').setAttribute('aria-expanded', String(!m.hidden)); });
