@@ -91,6 +91,8 @@
 (function () {
   const W = window.WALK; const book = document.getElementById('book'); let folio = 0;
   const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
+  // shorten at a sentence end so a card never stops mid-sentence
+  const short = (t, max) => { if (t.length <= max) return t; const cut = t.slice(0, max); const i = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('; ')); return i > 80 ? cut.slice(0, i + 1) : cut.slice(0, cut.lastIndexOf(' ')) + '…'; };
   function page(html, cls, style) { folio++; const d = document.createElement('section'); d.className = 'page ' + (cls || ''); if (style) d.setAttribute('style', style); d.innerHTML = html + `<div class="folio${folio % 2 ? '' : ' l'}">${folio}</div>`; book.appendChild(d); }
 
   // 1 cover
@@ -126,7 +128,7 @@
   for (let i = 0; i < pois.length; i += per) {
     const chunk = pois.slice(i, i + per);
     page(`<p class="eyebrow">Matisse's Paris · ${i + 1}–${Math.min(i + per, pois.length)} of ${pois.length}${i === 0 ? ' · cups are the cafés, the rest his places' : ''}</p>
-      <div class="places" style="margin-top:3mm">${chunk.map(c => `<div class="place${c.img ? '' : ' noimg'}">${c.img ? `<img src="${c.img}" alt="">` : '<div class="ph">no picture</div>'}<h3>${esc(c.name)}</h3><p class="sub">${esc(c.sub)}</p><p>${esc(c.text)}</p></div>`).join('')}</div>`);
+      <div class="places" style="margin-top:3mm">${chunk.map(c => `<div class="place${c.img ? '' : ' noimg'}">${c.img ? `<img src="${c.img}" alt="">` : '<div class="ph">no picture</div>'}<h3>${esc(c.name)}</h3><p class="sub">${esc(c.sub)}</p><p>${esc(short(c.text, 330))}</p></div>`).join('')}</div>`);
   }
   // dinner quiz + scissors
   page(`<div class="two"><div><p class="eyebrow">At dinner</p><h2 style="font-size:16pt;margin:2mm 0 4mm">The quiz, by table</h2><div class="qa">${W.dinner.map((d, i) => `<div><p class="q">${i + 1} · ${esc(d.q)}</p><p class="ans">${esc(d.a)}</p></div>`).join('')}</div></div>
