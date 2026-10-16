@@ -52,6 +52,19 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 @keyframes breathe { 0%, 100% { transform: scale(.9); opacity: .5; } 50% { transform: scale(1.08); opacity: 1; } }
 .sticker.got .ico::before { content: "✓"; position: absolute; left: -6px; top: -6px; width: 20px; height: 20px; border-radius: 50%; background: var(--leaf); color: #FAF6EE; font-size: .8rem; display: grid; place-items: center; border: 2px solid #FAF6EE; z-index: 1; }
 .maplibregl-marker { cursor: pointer; }
+/* cafés */
+.poi { width: 30px; height: 30px; border: 0; background: none; padding: 0; margin: 0; cursor: pointer; }
+.poi .ico { display: block; width: 30px; height: 30px; filter: drop-shadow(1px 2px 0 rgba(20,20,20,.35)); }
+.poi svg { width: 30px; height: 30px; display: block; }
+.maplibregl-popup-content { background: var(--paper); color: var(--ink); border: 3px solid var(--ink); border-radius: 4px; padding: 10px 12px; font-family: var(--body); box-shadow: 4px 5px 0 rgba(20,20,20,.25); }
+.maplibregl-popup-tip { border-top-color: var(--ink) !important; border-bottom-color: var(--ink) !important; }
+.maplibregl-popup-close-button { font-size: 1.3rem; padding: 2px 8px; color: var(--ink); }
+.poicard { display: grid; gap: 6px; max-height: 58vh; overflow: auto; }
+.poicard h3 { font-family: var(--display); font-weight: 900; font-size: 1.2rem; margin: 0; padding-right: 20px; }
+.poicard .sub { font-size: .8rem; color: var(--ink-soft); }
+.poicard img { width: 100%; border: 2px solid #141414; }
+.poicard .cr { font-size: .72rem; color: var(--ink-soft); }
+.poicard p { font-size: .9rem; line-height: 1.35; }
 
 /* cover */
 .cover { position: fixed; inset: 0; z-index: 30; background: var(--paper); overflow: auto; display: grid; align-content: center; padding-inline: var(--gl) var(--gr); padding-block: 32px; transition: opacity .5s ease, transform .5s ease; }

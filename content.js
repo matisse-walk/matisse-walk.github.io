@@ -201,6 +201,23 @@ window.WALK = {
       quiz: { q: "Which city holds both friends' paintings of these alleys today?", a: "Saint Petersburg, in the Hermitage." }
     }
   ],
+  /* the cafés and the vanished one: small cup markers with a card, no episode */
+  pois: [
+    { id: "dome", name: "Le Dôme", sub: "108 bd du Montparnasse · opened 1898", coord: [2.328911, 48.84202],
+      text: "Headquarters of the German painters, the Dômiers: Rudolf Levy, Hans Purrmann, Walter Bondy, Albert Weisgerber. Purrmann and Levy later ran Matisse's school for him. A Swedish corner too. Matisse himself is not recorded here: these were his students' cafés.",
+      img: "art/rol-le-dome-1931.jpg", credit: "Agence Rol, 25 August 1931. BnF, public domain." },
+    { id: "rotonde", name: "La Rotonde", sub: "105 bd du Montparnasse · opened 1911", coord: [2.329132, 48.842361],
+      text: "Victor Libion let painters with no money pay with a drawing, kept until they could pay. Kiki wrote in 1938: \"That blessed Rotonde, going there was like going home. Old Libion was the best of men.\" The story goes that women had to wear a hat to sit in the artists' room, so the teenage Kiki made herself one.",
+      img: "art/rol-la-rotonde-1924.jpg", credit: "Agence Rol, 1924. BnF, public domain." },
+    { id: "select", name: "Le Select", sub: "99 bd du Montparnasse · opened 1923", coord: [2.328367, 48.842614],
+      text: "The late arrival of the four, open all night from the start, the Americans' café of the 1920s." },
+    { id: "coupole", name: "La Coupole", sub: "102 bd du Montparnasse · opened 20 December 1927", coord: [2.328069, 48.8423],
+      text: "Built by two managers of the Dôme who had tried to buy it and failed. Opening night: more than 2,000 guests, about 1,200 bottles of champagne, the police at five in the morning. Twenty-seven painters decorated the pillars, Marie Vassilieff among them. Legend says they were paid in drinks; the invoice, found in 1993, says 23,000 francs." },
+    { id: "closerie", name: "La Closerie des Lilas", sub: "171 bd du Montparnasse · the poets' café", coord: [2.335975, 48.840102],
+      text: "The poet Paul Fort's Tuesdays, with Apollinaire and Jarry; Apollinaire brought Picasso here in 1905. On the terrace Fitzgerald handed Hemingway the manuscript of The Great Gatsby. Across the road stood the Bal Bullier, where the Delaunays danced the tango in painted clothes; Jules Flandrin, Matisse's classmate under Moreau, painted it in 1931." },
+    { id: "versailles", name: "Café de Versailles (gone)", sub: "3 place de Rennes, now place du 18-Juin-1940", coord: [2.324437, 48.844121],
+      text: "Facing the old station. Matisse's students met here; in 1908 the Swede Isaac Grünewald signed up his friends for the school over discussions at these tables. The management seated \"these good lads\" (Matisse, Marie Laurencin, Vlaminck among them) at the back, away from the window." }
+  ],
   dinner: [
     { q: "Upside down for 47 days at MoMA: how many visitors passed it before a stockbroker noticed?", a: "About 116,000." },
     { q: "What did Leo Stein pay for Woman with a Hat?", a: "400 francs. Matisse had asked 500." },

@@ -116,11 +116,29 @@
       b.innerHTML = `<span class="ico"><svg><use href="#st-${s.sticker}"/></svg><span class="n">${s.n === 0 ? 'H' : s.n}</span></span>`;
       b.addEventListener('click', (e) => { e.stopPropagation(); openStation(i); });
       markers[s.id] = new maplibregl.Marker({ element: b, anchor: 'center' }).setLngLat(at).addTo(map);
+      b.setAttribute('aria-label', `Stop ${s.n}: ${s.title}`);
     });
     renderAlbum();
   }
 
-  map.on('load', () => { recolour(); addRoutes(); addStickers(); });
+  /* cafés: cup markers with a card */
+  let openPopup = null;
+  function addPois() {
+    (W.pois || []).forEach(c => {
+      const el = document.createElement('button');
+      el.className = 'poi'; el.setAttribute('aria-label', c.name);
+      el.innerHTML = '<span class="ico"><svg><use href="#st-cup"/></svg></span>';
+      const html = `<div class="poicard"><h3>${c.name}</h3><p class="sub">${c.sub}</p>${c.img ? `<img src="${c.img}" alt="${c.name}" loading="lazy"><p class="cr">${c.credit}</p>` : ''}<p>${c.text}</p></div>`;
+      const popup = new maplibregl.Popup({ offset: 18, maxWidth: 'min(320px, 86vw)', closeButton: true });
+      popup.setHTML(html);
+      new maplibregl.Marker({ element: el, anchor: 'center' }).setLngLat(c.coord).addTo(map);
+      el.setAttribute('aria-label', c.name); el.dataset.id = c.id;
+      // MapLibre toggles popups from the map's own click, which our stopPropagation would swallow: toggle by hand
+      el.addEventListener('click', (e) => { e.stopPropagation(); if (openPopup && openPopup !== popup) openPopup.remove(); if (popup.isOpen()) { popup.remove(); openPopup = null; } else { popup.setLngLat(c.coord).addTo(map); openPopup = popup; } });
+    });
+  }
+
+  map.on('load', () => { recolour(); addRoutes(); addStickers(); addPois(); });
 
   /* nearest station to the user */
   function dist(a, b) { const R = 6371000, toR = Math.PI / 180; const dLat = (b[1] - a[1]) * toR, dLon = (b[0] - a[0]) * toR; const x = Math.sin(dLat / 2) ** 2 + Math.cos(a[1] * toR) * Math.cos(b[1] * toR) * Math.sin(dLon / 2) ** 2; return 2 * R * Math.asin(Math.sqrt(x)); }
