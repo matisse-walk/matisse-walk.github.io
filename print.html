@@ -62,12 +62,13 @@
   .qr p { font-size: 8.5pt; }
 
   /* Matisse's Paris */
-  .places { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm 5mm; height: 100%; align-content: start; }
-  .place { display: grid; grid-template-rows: auto auto 1fr; gap: 1.2mm; font-size: 7.6pt; line-height: 1.3; }
-  .place img { height: 26mm; width: 100%; object-fit: cover; border: 1pt solid var(--ink); }
+  .places { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 1fr 1fr; gap: 4mm 5mm; height: 118mm; }
+  .place { display: grid; grid-template-rows: auto auto auto 1fr; gap: 1.2mm; font-size: 7.8pt; line-height: 1.3; min-height: 0; overflow: hidden; }
+  .place p:last-child { overflow: hidden; }
+  .place img { height: 24mm; width: 100%; object-fit: cover; border: 1pt solid var(--ink); }
   .place h3 { font-size: 9.5pt; }
   .place .sub { font-size: 7pt; color: var(--soft); }
-  .place.noimg .ph { height: 26mm; border: 1pt solid var(--ink); background: var(--paper-2); display: grid; place-items: center; font-family: var(--display); color: var(--soft); }
+  .place.noimg .ph { height: 24mm; border: 1pt solid var(--ink); background: var(--paper-2); display: grid; place-items: center; font-family: var(--display); color: var(--soft); }
   .cups, .stars { font-size: 8pt; color: var(--soft); }
 
   /* lists */
@@ -121,7 +122,7 @@
       <div class="side">${more}<div class="qr"><img src="booklet/qr/${qrFor(s)}.png" alt=""><p>Listen: ${esc(s.audioLabel)}</p></div></div></div>`, '', st);
   });
   // Matisse's Paris
-  const pois = W.pois.slice(); const per = 9;
+  const pois = W.pois.slice(); const per = 6;
   for (let i = 0; i < pois.length; i += per) {
     const chunk = pois.slice(i, i + per);
     page(`<p class="eyebrow">Matisse's Paris · ${i + 1}–${Math.min(i + per, pois.length)} of ${pois.length}${i === 0 ? ' · cups are the cafés, the rest his places' : ''}</p>

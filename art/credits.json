@@ -984,6 +984,30 @@
     "https://agorha.inha.fr/ark:/54721/4bdb06b7-5a00-4017-bc08-745c9c87a1bc",
     "https://fr.geneawiki.com/wiki/Henri_MATISSE"
    ]
+  },
+  {
+   "slug": "cafe-de-versailles-place-de-rennes",
+   "file": "art/cafe-de-versailles-place-de-rennes.jpg",
+   "title": "PARIS - Autobus - Place de Rennes.jpg",
+   "licence": "Public domain",
+   "commons_url": "https://commons.wikimedia.org/wiki/File:PARIS_-_Autobus_-_Place_de_Rennes.jpg",
+   "photographer_or_uploader_credit": "Scanné par Claude Shoshany"
+  },
+  {
+   "slug": "musee-bourdelle-herakles",
+   "file": "art/musee-bourdelle-herakles.jpg",
+   "title": "Paris 15e - Musée Bourdelle - Jardin sur rue - Héraklès archer, première grande étude, 1906-1909.jpg",
+   "licence": "CC0",
+   "commons_url": "https://commons.wikimedia.org/wiki/File:Paris_15e_-_Musée_Bourdelle_-_Jardin_sur_rue_-_Héraklès_archer,_première_grande_étude,_1906-1909.jpg",
+   "photographer_or_uploader_credit": "Romainbehar"
+  },
+  {
+   "slug": "friesz-plaque",
+   "file": "art/friesz-plaque.jpg",
+   "title": "E. Othon-Friesz plaque - 73 rue de Notre-Dame des Champs, Paris 6.jpg",
+   "licence": "CC BY 2.0",
+   "commons_url": "https://commons.wikimedia.org/wiki/File:E._Othon-Friesz_plaque_-_73_rue_de_Notre-Dame_des_Champs,_Paris_6.jpg",
+   "photographer_or_uploader_credit": "Monceau from San Antonio"
   }
  ]
 }
