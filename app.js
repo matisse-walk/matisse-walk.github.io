@@ -69,13 +69,14 @@
   function addRoutes() {
     map.addSource('route-short', { type: 'geojson', data: 'map/route-short.geojson' });
     map.addSource('route-long', { type: 'geojson', data: 'map/route-long.geojson' });
-    map.addLayer({ id: 'route-long-line', type: 'line', source: 'route-long', layout: { 'line-join': 'round', 'line-cap': 'round', visibility: 'visible' }, paint: { 'line-color': '#1F3A93', 'line-width': 5, 'line-opacity': 0.9, 'line-dasharray': [0.2, 1.6] } });
+    map.addLayer({ id: 'route-long-halo', type: 'line', source: 'route-long', layout: { 'line-join': 'round', 'line-cap': 'round', visibility: 'visible' }, paint: { 'line-color': '#FAF6EE', 'line-width': 11, 'line-opacity': 0.9 } });
+    map.addLayer({ id: 'route-long-line', type: 'line', source: 'route-long', layout: { 'line-join': 'round', 'line-cap': 'round', visibility: 'visible' }, paint: { 'line-color': '#1F3A93', 'line-width': 6, 'line-opacity': 0.95, 'line-dasharray': [0.1, 1.7] } });
     map.addLayer({ id: 'route-short-halo', type: 'line', source: 'route-short', layout: { 'line-join': 'round', 'line-cap': 'round' }, paint: { 'line-color': '#FAF6EE', 'line-width': 11, 'line-opacity': 0.9 } });
     map.addLayer({ id: 'route-short-line', type: 'line', source: 'route-short', layout: { 'line-join': 'round', 'line-cap': 'round' }, paint: { 'line-color': '#E63312', 'line-width': 6 } });
   }
   function toggleLong() {
     longShown = !longShown;
-    map.setLayoutProperty('route-long-line', 'visibility', longShown ? 'visible' : 'none');
+    ['route-long-line', 'route-long-halo'].forEach(id => map.setLayoutProperty(id, 'visibility', longShown ? 'visible' : 'none'));
     $('routeToggle').textContent = longShown ? 'Hide the long walk' : 'Show the long walk';
     toast(longShown ? 'Long walk: 4.4 km, via the Steins' : 'Short walk: 3.3 km');
   }
@@ -106,7 +107,8 @@
       let at = s.coord;
       if (lines.length) {
         const a = nearestOnLine(s.coord, lines[0]), b = nearestOnLine(s.coord, lines[1]);
-        const pick = a.metres <= 80 ? a : (b.metres <= 80 ? b : null);
+        const reach = s.bonus ? 160 : 80;
+        const pick = a.metres <= reach ? a : (b.metres <= reach ? b : null);
         if (pick) at = pick.point;
       }
       s.mapCoord = at;
