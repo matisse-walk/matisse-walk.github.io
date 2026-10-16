@@ -37,6 +37,7 @@
     center: [2.3265, 48.8415], zoom: 14.6, minZoom: 12, maxZoom: 18.5,
     attributionControl: { compact: true }
   });
+  window.__map = map;
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'bottom-right');
   const geo = new maplibregl.GeolocateControl({ positionOptions: { enableHighAccuracy: true }, trackUserLocation: true, showUserHeading: true });
   map.addControl(geo, 'bottom-right');
@@ -112,7 +113,7 @@
       const b = document.createElement('button');
       b.className = 'sticker' + (s.bonus ? ' bonus' : ''); b.dataset.id = s.id; b.dataset.idx = i;
       b.setAttribute('aria-label', `Stop ${s.n}: ${s.title}`);
-      b.innerHTML = `<svg><use href="#st-${s.sticker}"/></svg><span class="n">${s.n === 0 ? 'H' : s.n}</span>`;
+      b.innerHTML = `<span class="ico"><svg><use href="#st-${s.sticker}"/></svg><span class="n">${s.n === 0 ? 'H' : s.n}</span></span>`;
       b.addEventListener('click', (e) => { e.stopPropagation(); openStation(i); });
       markers[s.id] = new maplibregl.Marker({ element: b, anchor: 'center' }).setLngLat(at).addTo(map);
     });
