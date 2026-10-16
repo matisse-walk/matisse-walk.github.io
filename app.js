@@ -128,8 +128,8 @@
   function addPois() {
     (W.pois || []).forEach(c => {
       const el = document.createElement('button');
-      el.className = 'poi'; el.setAttribute('aria-label', c.name);
-      el.innerHTML = '<span class="ico"><svg><use href="#st-cup"/></svg></span>';
+      el.className = 'poi' + (c.kind === 'place' ? ' place' : ''); el.setAttribute('aria-label', c.name);
+      el.innerHTML = `<span class="ico"><svg><use href="#st-${c.kind === 'place' ? 'star' : 'cup'}"/></svg></span>`;
       const html = `<div class="poicard"><h3>${c.name}</h3><p class="sub">${c.sub}</p>${c.img ? `<img src="${c.img}" alt="${c.name}" loading="lazy"><p class="cr">${c.credit}</p>` : ''}<p>${c.text}</p></div>`;
       const popup = new maplibregl.Popup({ offset: 18, maxWidth: 'min(320px, 86vw)', closeButton: true });
       popup.setHTML(html);

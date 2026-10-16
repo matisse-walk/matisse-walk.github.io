@@ -1,8 +1,8 @@
 /* Matisse's Montparnasse: keep the walk available once it has been opened.
    HTML, CSS and JS: network first, cache as fallback. Audio, strips, artworks, GeoJSON: cache first.
    Map tiles and fonts are left to the browser. Bump CACHE on every deploy. */
-const CACHE = 'mm-v2-202610162132';
-const CORE = ['index.html', 'app.css?v=202610162132', 'app.js?v=202610162132', 'content.js?v=202610162132', 'style.css', 'map/route-short.geojson', 'map/route-long.geojson'];
+const CACHE = 'mm-v2-202610162143';
+const CORE = ['index.html', 'app.css?v=202610162143', 'app.js?v=202610162143', 'content.js?v=202610162143', 'style.css', 'map/route-short.geojson', 'map/route-long.geojson'];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', (e) => { e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener('fetch', (e) => {

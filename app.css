@@ -56,6 +56,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .poi { width: 30px; height: 30px; border: 0; background: none; padding: 0; margin: 0; cursor: pointer; }
 .poi .ico { display: block; width: 30px; height: 30px; filter: drop-shadow(1px 2px 0 rgba(20,20,20,.35)); }
 .poi svg { width: 30px; height: 30px; display: block; }
+.poi.place, .poi.place .ico, .poi.place svg { width: 26px; height: 26px; }
 .maplibregl-popup-content { background: var(--paper); color: var(--ink); border: 3px solid var(--ink); border-radius: 4px; padding: 10px 12px; font-family: var(--body); box-shadow: 4px 5px 0 rgba(20,20,20,.25); }
 .maplibregl-popup-tip { border-top-color: var(--ink) !important; border-bottom-color: var(--ink) !important; }
 .maplibregl-popup-close-button { font-size: 1.3rem; padding: 2px 8px; color: var(--ink); }
