@@ -57,7 +57,7 @@
   .quiz .a { transform: rotate(180deg); font-size: 8.5pt; color: #4A463F; }
   .side { display: flex; flex-direction: column; gap: 3mm; height: 100%; min-height: 0; }
   .side > div { display: grid; gap: 1mm; justify-items: start; }
-  .side img.more { max-height: 52mm; width: auto; max-width: 100%; }
+  .side img.more { max-height: 52mm; width: auto; max-width: 100%; height: auto; align-self: flex-start; object-fit: contain; }
   .side.pair img.more { max-height: 40mm; }
   .side .qr { margin-top: auto; width: 100%; }
   .side img.more { border: 1.5pt solid var(--ink); background: #fff; padding: 1mm; }
@@ -114,7 +114,7 @@
     <p style="font-size:9.6pt">Henri Matisse (1869–1954) came late to painting. He was a lawyer's clerk in northern France when, about twenty and in bed after appendicitis, his mother gave him a box of paints; he said later he felt "transported into a sort of paradise". He failed the Beaux-Arts entrance exam, got into Gustave Moreau's studio, and lived poor for years by the Seine. In 1905 he and his friends showed paintings in colours so violent that a critic called them <em>fauves</em>, wild beasts; American collectors in Montparnasse, the Steins, bought them when almost nobody else would. He opened a school in 1908 and closed it in 1911 to paint. From 1917 he lived mostly in Nice, for the light.</p>
     <p style="font-size:9.6pt;margin-top:2.5mm">In January 1941, aged 71, a cancer operation left him often in bed. He asked the surgeon for three or four years; he got thirteen, and spent them cutting painted paper with scissors: the cut-outs, a new art. "Drawing with scissors," he wrote in <em>Jazz</em> in 1947. He died in Nice on 3 November 1954.</p>
     <div class="fact" style="margin-top:3mm;font-size:9pt"><span class="eyebrow">He looked nothing like a rebel</span><p>Gold-rimmed spectacles, a neat trimmed beard, conservative clothes. A writer said you would take him for a professor, a doctor or a scientist.</p></div></div>
-    <div class="side"><img class="more" src="art/matisse-self-portrait-1906.jpg" alt="" style="max-height:62mm"><p class="credit">Henri Matisse, Self-portrait in a striped T-shirt, 1906. SMK Copenhagen. Public domain.</p>
+    <div class="side"><div><img class="more" src="art/matisse-self-portrait-1906.jpg" alt="" style="max-height:62mm"><p class="credit">Henri Matisse, Self-portrait in a striped T-shirt, 1906. SMK Copenhagen. Public domain.</p></div>
     <div class="qr"><img src="booklet/qr/intro.png" alt=""><p>Listen: Who was Matisse? (5 min)</p></div></div></div>`);
   // chapters
   const qrFor = s => s.n === 0 ? 'intro' : (s.bonus ? s.id === 'steins' ? 'steins' : 'garden' : 'stop-' + s.n);
