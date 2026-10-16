@@ -65,11 +65,11 @@
     });
   }
 
-  let longShown = false;
+  let longShown = true;
   function addRoutes() {
     map.addSource('route-short', { type: 'geojson', data: 'map/route-short.geojson' });
     map.addSource('route-long', { type: 'geojson', data: 'map/route-long.geojson' });
-    map.addLayer({ id: 'route-long-line', type: 'line', source: 'route-long', layout: { 'line-join': 'round', 'line-cap': 'round', visibility: 'none' }, paint: { 'line-color': '#1F3A93', 'line-width': 5, 'line-opacity': 0.85, 'line-dasharray': [2, 1.2] } });
+    map.addLayer({ id: 'route-long-line', type: 'line', source: 'route-long', layout: { 'line-join': 'round', 'line-cap': 'round', visibility: 'visible' }, paint: { 'line-color': '#1F3A93', 'line-width': 5, 'line-opacity': 0.9, 'line-dasharray': [0.2, 1.6] } });
     map.addLayer({ id: 'route-short-halo', type: 'line', source: 'route-short', layout: { 'line-join': 'round', 'line-cap': 'round' }, paint: { 'line-color': '#FAF6EE', 'line-width': 11, 'line-opacity': 0.9 } });
     map.addLayer({ id: 'route-short-line', type: 'line', source: 'route-short', layout: { 'line-join': 'round', 'line-cap': 'round' }, paint: { 'line-color': '#E63312', 'line-width': 6 } });
   }

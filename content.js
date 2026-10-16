@@ -211,7 +211,7 @@ window.WALK = {
       img: "art/rol-la-rotonde-1924.jpg", credit: "Agence Rol, 1924. BnF, public domain." },
     { id: "select", name: "Le Select", sub: "99 bd du Montparnasse · opened 1923", coord: [2.328367, 48.842614],
       text: "The late arrival of the four, open all night from the start, the Americans' café of the 1920s.",
-      img: "art/select-2011.jpg", credit: "Le Select in 2011. Photo The original uploader was DIMSFIKAS at Greek Wikipedia., CC BY-SA 3.0." },
+      img: "art/select-2011.jpg", credit: "Le Select in 2011. Photo DIMSFIKAS (Greek Wikipedia), CC BY-SA 3.0." },
     { id: "coupole", name: "La Coupole", sub: "102 bd du Montparnasse · opened 20 December 1927", coord: [2.328069, 48.8423],
       text: "Built by two managers of the Dôme who had tried to buy it and failed. Opening night: more than 2,000 guests, about 1,200 bottles of champagne, the police at five in the morning. Twenty-seven painters decorated the pillars, Marie Vassilieff among them. Legend says they were paid in drinks; the invoice, found in 1993, says 23,000 francs.",
       img: "art/coupole-facade.jpg", credit: "La Coupole today. Photo Britchi Mirela, CC BY-SA 4.0." },
