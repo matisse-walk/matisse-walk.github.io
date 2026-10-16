@@ -1,0 +1,21 @@
+:root {
+  --cobalt: #1F3A93;
+  --vermilion: #E63312;
+  --lemon: #F5C518;
+  --leaf: #2E7D4F;
+  --ink: #111111;
+  --paper: #FAF6EE;
+  --serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --sans: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #1F3A93; --ink: #FAF6EE; }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 18px; line-height: 1.45; }
+.cover { min-height: 92vh; display: flex; flex-direction: column; justify-content: center; padding: 24px 16px; max-width: 640px; margin: 0 auto; }
+.cutout { width: min(80vw, 360px); height: auto; margin-bottom: 24px; }
+.kicker { text-transform: uppercase; letter-spacing: .12em; font-size: .85rem; margin: 0 0 8px; }
+h1 { font-family: var(--serif); font-weight: 900; font-size: clamp(2.6rem, 11vw, 4.5rem); line-height: .95; margin: 0 0 20px; }
+.lede { font-size: 1.15rem; max-width: 36ch; margin: 0; }
+footer { padding: 16px; font-size: .8rem; opacity: .75; max-width: 640px; margin: 0 auto; }
