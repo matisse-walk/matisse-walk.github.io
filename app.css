@@ -97,7 +97,8 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .nowwrap img { width: 100vw; max-width: none; }
 .thennow input[type=range] { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; }
 .credit { font-size: .82rem; color: var(--ink-soft); line-height: 1.35; }
-.more { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.more { display: grid; grid-template-columns: 1fr; gap: 10px; }
+@media (min-width: 760px) { .more { grid-template-columns: 1fr 1fr; } .more figure:only-child { grid-column: 1 / -1; } }
 .more figure { margin: 0; background: var(--mat); border: 2px solid #141414; padding: 4px; display: grid; gap: 3px; }
 .more figcaption { font-size: .72rem; color: #4A463F; line-height: 1.25; }
 
