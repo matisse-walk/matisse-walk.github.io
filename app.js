@@ -77,7 +77,6 @@
   function toggleLong() {
     longShown = !longShown;
     ['route-long-line', 'route-long-halo'].forEach(id => map.setLayoutProperty(id, 'visibility', longShown ? 'visible' : 'none'));
-    $('routeToggle').textContent = longShown ? 'Hide the long walk' : 'Show the long walk';
     toast(longShown ? 'Long walk: 4.4 km, via the Steins' : 'Short walk: 3.3 km');
   }
 
@@ -249,7 +248,6 @@
   document.querySelectorAll('[data-open]').forEach(a => a.addEventListener('click', (e) => { e.preventDefault(); $('menu').hidden = true; openStation(+a.dataset.open); }));
   $('brand').addEventListener('click', (e) => { e.preventDefault(); closeStation(); map.flyTo({ center: [2.3265, 48.8415], zoom: 14.6 }); });
   $('menuBtn').addEventListener('click', () => { const m = $('menu'); m.hidden = !m.hidden; $('menuBtn').setAttribute('aria-expanded', String(!m.hidden)); });
-  $('routeToggle').addEventListener('click', (e) => { e.preventDefault(); $('menu').hidden = true; toggleLong(); });
   $('locateLink').addEventListener('click', (e) => { e.preventDefault(); $('menu').hidden = true; geo.trigger(); });
   $('allParis').addEventListener('click', (e) => { e.preventDefault(); $('menu').hidden = true; closeStation();
     const b = new maplibregl.LngLatBounds(); (W.pois || []).forEach(c => b.extend(c.coord)); W.stations.forEach(s => b.extend(s.coord));
