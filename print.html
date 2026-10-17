@@ -106,7 +106,7 @@
   // 1 cover
   page(`<div class="cover">
     <div><svg class="cutout" viewBox="0 0 200 120"><path fill="#F5C518" d="M18 70c20-40 60-55 95-40-25 10-35 30-25 55-30 5-60-5-70-15z"/><path fill="#E63312" d="M120 20c30-10 60 10 62 40-20-10-40-5-50 15-10-20-15-40-12-55z"/><path fill="#2E7D4F" d="M60 95c15-8 35-6 50 6-15 6-35 8-50-6z"/><path fill="#141414" d="M150 62c-6-6-14-9-22-7 7 3 11 8 12 15-9-2-17 1-22 7 9 1 17 5 22 12 2-7 7-13 14-16-6-1-10-5-13-11 4 0 7 0 9 0z"/></svg></div>
-    <div><p class="eyebrow">${esc(W.date)} · Paris</p><h1>Matisse's<br>Montparnasse</h1><p class="lede">A walk through the Paris of Henri Matisse and his friends: five stops, five stories, the cafés, and the city beyond. A souvenir of the MATISSE project meeting in Paris, prepared by Andrey Sadovykh.</p></div></div>`, 'cover-page');
+    <div><p class="eyebrow">${esc(W.date)} · Paris</p><h1>Matisse's<br>Montparnasse</h1><p class="lede">A walk through the Paris of Henri Matisse and his friends: five stops, five stories, the cafés, and the city beyond. A souvenir of the MATISSE project meeting in Paris. Original idea, concept, direction and validation: Andrey Sadovykh.</p></div></div>`, 'cover-page');
   // 2 contents + map
   const tocRows = W.stations.map(s => `<div><b>${s.n === 0 ? '·' : s.n}</b><span>${esc(s.title)}</span><span class="credit">${esc(s.place)}</span></div>`).join('');
   page(`<div class="two"><div><p class="eyebrow">Contents</p><h2 style="font-size:16pt;margin:2mm 0 4mm">The walk</h2><div class="toc">${tocRows}<div><b>·</b><span>Matisse's Paris: thirty-five places</span><span></span></div><div><b>·</b><span>The dinner quiz · Credits</span><span></span></div></div>
@@ -149,7 +149,7 @@
     for (let k = 0; k < pages; k++) {
       const last = k === pages - 1;
       page(`<p class="eyebrow">Credits · ${k + 1} of ${pages}</p>${k === 0 ? '<h2 style="font-size:14pt;margin:2mm 0 3mm">Pictures, sources, thanks</h2>' : '<div style="height:4mm"></div>'}<div class="credits">${all.slice(k * per, (k + 1) * per).join('')}</div>
-        ${last ? `<p class="credit" style="margin-top:4mm;max-width:170mm">Concept, direction, instructions and validation: Andrey Sadovykh. Texts CC BY 4.0. Audio episodes generated with NotebookLM from fact-checked notes; the notes are the reference, not the recordings. Comic pages drawn with Gemini in paper-cut style from our script; no real person is depicted. Map data © OpenStreetMap contributors (ODbL), tiles by OpenFreeMap. Research sources are listed in the project's notes and in art/credits.json on the site.</p>` : ''}`);
+        ${last ? `<p class="credit" style="margin-top:4mm;max-width:170mm">Original idea and concept, product design and direction, content validation, guide of the walk: Andrey Sadovykh. Research, texts, code and briefs written with Claude (Anthropic) under his direction; texts CC BY 4.0. Audio episodes generated with NotebookLM from fact-checked notes; the notes are the reference, not the recordings. Comic pages drawn with Gemini in paper-cut style from our script; no real person is depicted. Map data © OpenStreetMap contributors (ODbL), tiles by OpenFreeMap. Research sources are listed in the project's notes and in art/credits.json on the site.</p>` : ''}`);
     }
     document.body.dataset.ready = '1';
   });

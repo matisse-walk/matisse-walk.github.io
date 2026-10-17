@@ -19,5 +19,5 @@ A static site, no build step. GitHub Pages serves the `main` branch root.
 | `map/` | route GeoJSON, and poster renders of the route from OpenStreetMap data (`tools/render_map.py`) |
 | `tools/` | the Commons fetcher and the map renderer |
 
-Concept, direction, instructions and validation: Andrey Sadovykh. Texts CC BY 4.0. Code MIT. Artworks public domain; each carries its credit.
+Original idea and concept, product design and direction, content validation, guide of the walk: Andrey Sadovykh. Research, texts, code and briefs written with Claude (Anthropic) under his direction. Texts CC BY 4.0. Code MIT. Artworks public domain; each carries its credit.
 Map data © OpenStreetMap contributors (ODbL); tiles by OpenFreeMap.
