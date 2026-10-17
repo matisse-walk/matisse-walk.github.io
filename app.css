@@ -148,3 +148,11 @@ details.quiz summary { cursor: pointer; font-weight: 700; }
   .card { border-radius: 0; }
   .cam { max-height: 56vh; }
 }
+
+/* full-screen picture viewer */
+.lightbox { position: fixed; inset: 0; z-index: 60; background: rgba(20,20,20,.94); display: grid; grid-template-rows: 1fr auto; align-items: center; justify-items: center; touch-action: pinch-zoom; }
+.lightbox img { max-width: 100vw; max-height: calc(100vh - 56px - env(safe-area-inset-bottom, 0px)); width: auto; height: auto; object-fit: contain; touch-action: pinch-zoom; cursor: zoom-out; }
+.lightbox .lb-credit { color: #FAF6EE; font-size: .85rem; padding: 8px max(16px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); text-align: center; max-width: 70ch; margin: 0; }
+.lightbox .lb-close { position: fixed; top: calc(10px + env(safe-area-inset-top, 0px)); right: max(12px, env(safe-area-inset-right, 0px)); width: 40px; height: 40px; border: 2px solid #FAF6EE; background: #141414; color: #FAF6EE; font-size: 1.5rem; line-height: 1; cursor: pointer; }
+.lb-open { overflow: hidden; }
+.hero img, .more img, .thennow img, .poicard img, .icons img, .pair img, .cam img { cursor: zoom-in; }

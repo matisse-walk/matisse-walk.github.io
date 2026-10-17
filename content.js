@@ -183,7 +183,7 @@ window.WALK = {
       id: "garden", n: 7, bonus: true, sticker: "leaf", accent: "#2E7D4F", accentInk: "#FAF6EE",
       title: "The garden two friends painted", place: "Jardin du Luxembourg (gates close 18:15)", time: "bonus",
       coord: [2.33265, 48.84555],
-      audio: "audio/ep-07.mp3", audioLabel: "The garden turned into Tahiti · episode coming",
+      audio: "audio/ep-07.mp3", audioLabel: "The garden turned into Tahiti · 4 min",
       panels: "comic/panels-07.jpg",
       captions: [
         "About 1898. Matisse and Marquet, broke, carry easels into the Luxembourg garden.",

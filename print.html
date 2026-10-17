@@ -145,7 +145,7 @@
     for (let k = 0; k < pages; k++) {
       const last = k === pages - 1;
       page(`<p class="eyebrow">Credits · ${k + 1} of ${pages}</p>${k === 0 ? '<h2 style="font-size:14pt;margin:2mm 0 3mm">Pictures, sources, thanks</h2>' : '<div style="height:4mm"></div>'}<div class="credits">${all.slice(k * per, (k + 1) * per).join('')}</div>
-        ${last ? `<p class="credit" style="margin-top:4mm;max-width:170mm">Text © Andrey Sadovykh, CC BY 4.0. Audio episodes generated with NotebookLM from fact-checked notes; the notes are the reference, not the recordings. Comic pages drawn with Gemini in paper-cut style from our script; no real person is depicted. Map data © OpenStreetMap contributors (ODbL), tiles by OpenFreeMap. Research sources are listed in the project's notes and in art/credits.json on the site.</p>` : ''}`);
+        ${last ? `<p class="credit" style="margin-top:4mm;max-width:170mm">Concept, direction, instructions and validation: Andrey Sadovykh. Texts CC BY 4.0. Audio episodes generated with NotebookLM from fact-checked notes; the notes are the reference, not the recordings. Comic pages drawn with Gemini in paper-cut style from our script; no real person is depicted. Map data © OpenStreetMap contributors (ODbL), tiles by OpenFreeMap. Research sources are listed in the project's notes and in art/credits.json on the site.</p>` : ''}`);
     }
     document.body.dataset.ready = '1';
   });
