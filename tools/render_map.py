@@ -41,8 +41,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 MAP_DIR = os.path.join(ROOT, "map")
 CACHE = os.path.join(HERE, "overpass-cache.json")
-DEFAULT_KML_DIR = (r"C:\Users\asadovykh\OneDrive - LA POSTE GROUPE\_work\DOCA_COMM"
-                   r"\matisse\paris\social\map")
+DEFAULT_KML_DIR = r"C:\_code\_PROJECTS\matisse-walk-studio\map"  # private repo matisse-walk/studio
 
 # --------------------------------------------------------------------------- data
 BBOX = (48.834, 2.312, 48.851, 2.340)  # S, W, N, E  (lat/lon)
